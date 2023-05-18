@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator - Page 2</title>
+</head>
+<body>
+    <h1>BMI Calculator - Page 2</h1>
+    <form action="/page3" method="post">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" name="weight" id="weight" required><br><br>
+        <label for="height">Height (cm):</label>
+        <input type="number" name="height" id="height" required><br><br>
+        <input type="hidden" name="name" value="<%= name %>">
+        <input type="hidden" name="age" value="<%= age %>">
+        <input type="hidden" name="sex" value="<%= sex %>">
+        <input type="submit" value="Calculate BMI">
+    </form>
+</body>
+</html>
